@@ -1,0 +1,17 @@
+.container {
+    margin-top: 50px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .btn-login,
+  .btn-google {
+    width: 100%;
+  }
+  
+  .col-6 {
+    margin: 0 auto;
+    max-width: 400px; 
+  }

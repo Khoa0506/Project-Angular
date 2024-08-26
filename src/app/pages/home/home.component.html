@@ -1,0 +1,39 @@
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Cars discount</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+        <li class="breadcrumb-item active">Tables</li>
+    </ol>
+    <div class="card mb-4">
+        <div class="card-header">
+            <i class="fas fa-table me-1"></i>
+            Data Table
+        </div>
+        <div class="card-body">
+            <table id="datatablesSimple" class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Condition</th>
+                        <th>Price</th>
+                        <th>Discount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of items2">
+                        <ng-container *ngIf="item.condition === 'old'">
+                            <td>{{ item.Id }}</td>
+                            <td>{{ item.name }}</td>
+                            <td>{{ item.type }}</td>
+                            <td>{{ item.condition }}</td>
+                            <td>{{ item.price }} đ</td>
+                            <td>20%</td>
+                        </ng-container>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

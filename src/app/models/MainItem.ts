@@ -1,0 +1,1 @@
+export class MainItem { Id?: string; name?: string; type?: string; condition?: string; price?: string}
